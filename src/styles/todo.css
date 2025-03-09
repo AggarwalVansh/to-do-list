@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #f0f0f0; /* Default light background */
+  color: #333; /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.mode-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.dark-mode .container {
+  background-color: #2d3748;
+  color: #ffffff;
+}
+  .body.dark-mode .task {
+      background-color: #4a5568;
+      border-color: #718096;
+      color: #ffffff;
+  }
+  .body.dark-mode .task.completed{
+      color: #a0aec0;
+  }
+  
+  .todo-app {
+    width: 600px;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .add-task {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .task-input, .edit-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+  }
+  
+  .add-button, .edit-button, .delete-button, .update-button, .mode-toggle, .del-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    background-color: #4299e1;
+    color: white;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+    color: #a0aec0;
+  }
+  
+  .task-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-checkbox {
+    margin-right: 10px;
+  }
+  
+  .task-actions {
+    display: flex;
+  }
+  
+  .edit-button {
+    background-color: goldenrod;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .delete-button {
+    background-color: #228B22;
+    color: white;
+  }
+  
+  .del-button {
+    background-color: red;
+    color: white;
+  }
+
+  
+  .edit-task {
+      display: flex;
+      width: 100%;
+  }
+  .update-button{
+      background-color: green;
+      color: white;
+  }
+  
+  .mode-toggle {
+    background-color: #000; 
+    color: white;
+  }
